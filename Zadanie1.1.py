@@ -33,7 +33,15 @@ print()
 
 cena_ziemniakow2 = int(input("Podaj cenę kilograma ziemniaków: "))
 ile_kilo2 = int(input("Ile kilogramów ziemniaków chcesz kupić: "))
+cena_ziem = cena_ziemniakow2 * ile_kilo2
 cena_bananow = int(input("Podaj cenę kilograma bananów: "))
 ile_kilo3 = int(input("Ile kilogramów bananów chcesz kupić: "))
+cena_ban = cena_bananow * ile_kilo3
 kwota_do_zaplaty3 = cena_ziemniakow2 * ile_kilo2 + cena_bananow * ile_kilo3
 print(f"Kwota do zapłaty to {kwota_do_zaplaty3}")
+if cena_ziem > cena_ban:
+    print("Za ziemniaki trzeba zapłacić więcej niż za banany.")
+elif cena_ban > cena_ziem:
+    print("Za banany trzeba zapłacić więcej niż za ziemniaki")
+else:
+    print ("Oba produkty są w tej samej cenie")
