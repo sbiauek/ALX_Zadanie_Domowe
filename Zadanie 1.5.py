@@ -11,8 +11,8 @@
 # import math
 #
 # x = math.sqrt(10)
-# ```
-from math import sqrt
+
+import math
 
 
 
@@ -23,10 +23,14 @@ bok_c = int(input("Bok C: "))
 
 p = (bok_a + bok_b + bok_c) / 2
 
-pole_trojkata = sqrt(p * ((p - bok_a) * (p - bok_b) * (p - bok_c)))
 
-if bok_a + bok_b > bok_c:
+
+if bok_a + bok_b < bok_c:
+    print("Z takich boków nie da się zbudować trójkąta")
+elif bok_b + bok_c < bok_a:
+    print("Z takich boków nie da się zbudować trójkąta")
+elif bok_a + bok_c < bok_b:
     print("Z takich boków nie da się zbudować trójkąta")
 else:
-    print(f"Pole trójkąta wynosi: {pole_trojkata} cm2")
+    print(f"Pole trójkąta wynosi: {round(math.sqrt(p * ((p - bok_a) * (p - bok_b) * (p - bok_c))), 2)} cm2 ")
 
