@@ -14,12 +14,12 @@ print(f"Pierwsza liczba to: {pierwsza_liczba}")
 print(f"Druga liczba to: {druga_liczba}")
 suma = int(input("Podaj sumę powyższych liczb: "))
 suma1 = pierwsza_liczba + druga_liczba
-if suma != suma1:
-    continue
+while suma != suma1:
     print("Próbuj dalej!")
-elif suma == suma1:
-    break
+    continue
+while suma == suma1:
     print("Gratulację! To prawidłowy wynik!")
+    break
 
 
 
