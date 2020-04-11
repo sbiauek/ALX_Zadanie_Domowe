@@ -30,3 +30,6 @@ elif 18 >= wiek <= 64:
     print(f"Za bilety musisz zapłacić: {wiek_dorosly * bilety} PLN")
 elif wiek >= 65:
     print(f"Za bilety musisz zapłacić: {wiek_emerytalny * bilety} PLN")
+
+
+#Dlaczego nie dziala np. dla wieku 25, 32?
