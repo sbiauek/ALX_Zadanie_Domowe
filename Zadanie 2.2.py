@@ -7,3 +7,6 @@
 #     *
 #   * * *
 # * * * * *
+
+liczba = int(input("Podaj liczbę całkowitą: "))
+
