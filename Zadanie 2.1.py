@@ -14,12 +14,14 @@ print(f"Pierwsza liczba to: {pierwsza_liczba}")
 print(f"Druga liczba to: {druga_liczba}")
 suma = int(input("Podaj sumę powyższych liczb: "))
 suma1 = pierwsza_liczba + druga_liczba
-while suma != suma1:
-    print("Próbuj dalej!")
-    continue
 while suma == suma1:
     print("Gratulację! To prawidłowy wynik!")
     break
+if suma != suma1:
+    print(f"Próbuj dalej!") #Nie wiem jak zrobić tutaj, żeby wracało do "PODAJ SUME POWYZSZYCH LICZB
+                             #probowalem z continue, ale mi kiepsko to wyszlo
+
+
 
 
 
