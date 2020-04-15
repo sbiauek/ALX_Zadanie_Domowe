@@ -22,7 +22,7 @@ wiek_dorosly = 3.80
 wiek_emerytalny = 1.90
 
 
-if 0 >= wiek <= 6:
+if 0 <= wiek <= 6:
     print(f"Za bilety musisz zapłacić: {wiek_przedszkolny * bilety} PLN")
 elif 7 >= wiek <= 17:
     print(f"Za bilety musisz zapłacić: {wiek_szkolny * bilety} PLN")
