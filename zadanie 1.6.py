@@ -16,20 +16,15 @@
 wiek = int(input("Podaj wiek osoby kupującej: "))
 bilety = int(input("Podaj liczbę biletów: "))
 
-wiek_przedszkolny = 0
-wiek_szkolny = 2.28
-wiek_dorosly = 3.80
-wiek_emerytalny = 1.90
-
 
 if 0 <= wiek <= 6:
-    print(f"Za bilety musisz zapłacić: {wiek_przedszkolny * bilety} PLN")
+    cena = 0
 elif 7 >= wiek <= 17:
-    print(f"Za bilety musisz zapłacić: {wiek_szkolny * bilety} PLN")
+    cena = 2.28
 elif 18 >= wiek <= 64:
-    print(f"Za bilety musisz zapłacić: {wiek_dorosly * bilety} PLN")
+    cena = 3.80
 elif wiek >= 65:
-    print(f"Za bilety musisz zapłacić: {wiek_emerytalny * bilety} PLN")
-
+    cena = 1.90
+print(f"Za bilety musisz zapłacić: {cena * bilety} PLN")
 
 #Dlaczego nie dziala np. dla wieku 25, 32?
