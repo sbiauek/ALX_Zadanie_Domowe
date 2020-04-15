@@ -25,11 +25,7 @@ p = (bok_a + bok_b + bok_c) / 2
 
 
 
-if bok_a + bok_b < bok_c:
-    print("Z takich boków nie da się zbudować trójkąta")
-elif bok_b + bok_c < bok_a:
-    print("Z takich boków nie da się zbudować trójkąta")
-elif bok_a + bok_c < bok_b:
+if bok_a + bok_b < bok_c or bok_b + bok_c < bok_a or bok_a + bok_c < bok_b:
     print("Z takich boków nie da się zbudować trójkąta")
 else:
     print(f"Pole trójkąta wynosi: {round(math.sqrt(p * ((p - bok_a) * (p - bok_b) * (p - bok_c))), 2)} cm2 ")
