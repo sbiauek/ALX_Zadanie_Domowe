@@ -20,5 +20,52 @@
 # Dla wybranych napisz też interaktywne programy, które pytają użytkownika o dane i wypisują wynik.
 
 
+#1111111111
 
-def stopy_na_metry(stopy, metry)
+def stopy_na_metry(stopy: int) -> int:
+    """Funkcja przeliczająca stopy na metry"""
+    return stopy / 3.2808
+stopy = int(input("Podaj liczbę stóp: "))
+wynik = (round(stopy_na_metry(stopy), 2))
+
+print(wynik)
+
+def test_stopy_na_metry():
+    assert ("25") == 7.62
+
+print("="*30)
+#2222222222
+
+def wieksza_liczba(a: int, b: int) -> int:
+    """Funkcja zwracająca większą liczbę"""
+    if a > b:
+        return a
+
+    return b
+a = int(input("Podaj liczbę a: "))
+b = int(input("Podaj liczbę b: "))
+wynik2 = wieksza_liczba(a, b)
+print(f"Większa liczba to: {wynik2}")
+
+
+def test_wieksza_liczba():
+    assert (2, 7) == 7
+
+print("="*30)
+
+#3333333333333333
+
+def srednia(a: int, b: int) -> int:
+    """Funkcja zwracająca średnią z dwóch liczb"""
+    return (a1+b2)/2
+a1 = int(input("Podaj liczbę a: "))
+b2 = int(input("Podaj liczbę b: "))
+wynik3 = srednia(a1, b2)
+print(f"Średnia z dwóch podanych liczb to: {wynik3}")
+
+
+def test_srednia():
+    assert (4,10) == 7
+
+print("="*30)
+#44444444444
