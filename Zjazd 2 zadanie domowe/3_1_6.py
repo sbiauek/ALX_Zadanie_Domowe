@@ -21,3 +21,26 @@
 
 
 #########6
+
+
+
+import math
+
+def pole_trojkata(bok_a: int, bok_b: int, bok_c: int) -> int:
+    return math.sqrt(p * ((p - bok_a) * (p - bok_b) * (p - bok_c)))
+
+print("Podaj długość boków trójkąta.")
+bok_a = int(input("Bok A: "))
+bok_b = int(input("Bok B: "))
+bok_c = int(input("Bok C: "))
+
+p = (bok_a + bok_b + bok_c) / 2
+pole = pole_trojkata(bok_a, bok_b, bok_c)
+if bok_a + bok_b < bok_c or bok_b + bok_c < bok_a or bok_a + bok_c < bok_b:
+    print("Z takich boków nie da się zbudować trójkąta")
+else:
+    print(f"Pole trójkąta wynosi: {round(pole, 2)} cm2 ")
+
+def test_pole_trojkata():
+    assert (5, 5 ,5) == 10.83
+

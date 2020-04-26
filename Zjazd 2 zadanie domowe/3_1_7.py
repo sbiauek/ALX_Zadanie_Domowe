@@ -18,3 +18,16 @@
 # 8. `mile_na_kilometry` - przelicza odległość wyrażoną w milach na kilometry
 #
 # Dla wybranych napisz też interaktywne programy, które pytają użytkownika o dane i wypisują wynik.
+
+
+def kilometry_na_mile(kilometry: int) -> int:
+    """Funkcja przeliczająca kilometry na mile"""
+    return kilometry * 0.621371192
+kilometry = int(input("Podaj liczbę kilometrów: "))
+wynik = (round(kilometry_na_mile(kilometry), 2))
+
+print(wynik)
+
+
+def test_kilometry_na_mile():
+    assert ("100") == 62.14
