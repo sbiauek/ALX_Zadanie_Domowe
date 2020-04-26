@@ -20,71 +20,6 @@
 # Dla wybranych napisz też interaktywne programy, które pytają użytkownika o dane i wypisują wynik.
 
 
-#1111111111
-
-def stopy_na_metry(stopy: int) -> int:
-    """Funkcja przeliczająca stopy na metry"""
-    return stopy / 3.2808
-stopy = int(input("Podaj liczbę stóp: "))
-wynik = (round(stopy_na_metry(stopy), 2))
-
-print(wynik)
-
-def test_stopy_na_metry():
-    assert ("25") == 7.62
-
-print("="*30)
-#2222222222
-
-def wieksza_liczba(a: int, b: int) -> int:
-    """Funkcja zwracająca większą liczbę"""
-    if a > b:
-        return a
-
-    return b
-a = int(input("Podaj liczbę a: "))
-b = int(input("Podaj liczbę b: "))
-wynik2 = wieksza_liczba(a, b)
-print(f"Większa liczba to: {wynik2}")
-
-
-def test_wieksza_liczba():
-    assert (2, 7) == 7
-
-print("="*30)
-
-#3333333333333333
-
-def srednia(a: int, b: int) -> int:
-    """Funkcja zwracająca średnią z dwóch liczb"""
-    return (a1+b2)/2
-a1 = int(input("Podaj liczbę a: "))
-b2 = int(input("Podaj liczbę b: "))
-wynik3 = srednia(a1, b2)
-print(f"Średnia z dwóch podanych liczb to: {wynik3}")
-
-
-def test_srednia():
-    assert (4,10) == 7
-
-print("="*30)
-#44444444444
-
-import math
-
-def pole_kola(r: int) -> int:
-    """Funkcja obliczająca pole koła na podstawie podanego promienia"""
-    return math.pi * r**2
-
-r = int(input("Podaj promień koła: "))
-pole = pole_kola(r)
-print(f"Pole koła wynosi: {round(pole, 2)}")
-
-def test_pole_kola():
-    assert (3) == 28.27
-
-print("="*30)
-#55555555555
 def bmi (wzrost: float, waga: int) -> int:
   return waga / (wzrost ** 2)
 
@@ -102,4 +37,6 @@ elif 25 <= wwynik_bmi <= 29.9:
 elif wynik_bmi > 30:
     print(f"Twoje BMI wynosi: {round(wynik_bmi, 2)}. Cierpisz na otyłość. Zgłoś się do swojego lekarza rodzinnego.")
 
-def test_
+def test_bmi():
+    assert (1.89, 70) == 19.6
+
