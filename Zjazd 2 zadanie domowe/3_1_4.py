@@ -29,9 +29,7 @@ def pole_kola(r: int) -> int:
     """Funkcja obliczająca pole koła na podstawie podanego promienia"""
     return math.pi * r**2
 
-r = int(input("Podaj promień koła: "))
-pole = pole_kola(r)
-print(f"Pole koła wynosi: {round(pole, 2)}")
+
 
 def test_pole_kola():
-    assert (3) == 28.27
+    assert pole_kola(3) == 28.274333882308138

@@ -42,5 +42,5 @@ else:
     print(f"Pole trójkąta wynosi: {round(pole, 2)} cm2 ")
 
 def test_pole_trojkata():
-    assert (5, 5 ,5) == 10.83
+    assert pole_trojkata(5, 5 ,5) == 10.83
 

@@ -25,10 +25,6 @@
 def stopy_na_metry(stopy: int) -> int:
     """Funkcja przeliczająca stopy na metry"""
     return stopy / 3.2808
-stopy = int(input("Podaj liczbę stóp: "))
-wynik = (round(stopy_na_metry(stopy), 2))
-
-print(wynik)
 
 def test_stopy_na_metry():
-    assert ("25") == 7.62
+    stopy_na_metry(25) == 7.62

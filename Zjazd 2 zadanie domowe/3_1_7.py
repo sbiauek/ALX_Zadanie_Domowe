@@ -30,4 +30,4 @@ print(wynik)
 
 
 def test_kilometry_na_mile():
-    assert ("100") == 62.14
+    assert kilometry_na_mile("100") == 62.14

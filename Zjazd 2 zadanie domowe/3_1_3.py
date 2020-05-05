@@ -32,4 +32,4 @@ print(f"Średnia z dwóch podanych liczb to: {wynik3}")
 
 
 def test_srednia():
-    assert (4,10) == 7
+    assert srednia(4,10) == 7

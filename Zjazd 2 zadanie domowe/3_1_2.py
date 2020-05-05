@@ -34,4 +34,4 @@ print(f"Większa liczba to: {wynik2}")
 
 
 def test_wieksza_liczba():
-    assert (2, 7) == 7
+    assert wieksza_liczba(2, 7) == 7

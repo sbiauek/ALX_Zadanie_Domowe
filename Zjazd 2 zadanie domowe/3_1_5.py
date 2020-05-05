@@ -38,5 +38,5 @@ elif wynik_bmi > 30:
     print(f"Twoje BMI wynosi: {round(wynik_bmi, 2)}. Cierpisz na otyłość. Zgłoś się do swojego lekarza rodzinnego.")
 
 def test_bmi():
-    assert (1.89, 70) == 19.6
+    assert bmi(1.89, 70) == 19.6
 
