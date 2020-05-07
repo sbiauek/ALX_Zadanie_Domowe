@@ -15,3 +15,15 @@
 
 #A
 
+from calendar import monthrange
+
+
+def liczba_dni_w_miesiacu(rok: int, miesiac: str) -> int:
+        return monthrange(rok, miesiac)[1]
+
+rok = int(input("Podaj rok: "))
+miesiac = int(input("Podaj miesiąc: "))
+
+
+print(f"Ten miesiąc ma {liczba_dni_w_miesiacu(rok, miesiac)} dni")
+
