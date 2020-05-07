@@ -26,6 +26,6 @@ miesiac = int(input("Choose a month (number): "))
 nazwa = calendar.month_name[miesiac]
 
 
-print(f"{nazwa} has {liczba_dni_w_miesiacu(rok, miesiac)} days.")
+print(f"{nazwa}, {rok} has {liczba_dni_w_miesiacu(rok, miesiac)} days.")
 
 
